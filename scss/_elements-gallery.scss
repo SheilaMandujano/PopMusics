@@ -1,0 +1,138 @@
+/*  
+    6.9. ELEMENTS - GALLERY
+    ========================================================================= */
+
+.gallery-items {
+    padding-left: 0;
+    > li {
+        list-style: none;
+    }
+
+    .gallery-item {
+        margin-bottom: 0 !important;
+        padding-right: 7px;
+        padding-left: 7px;
+        padding-bottom: 15px;
+        .gallery-item-container {
+            position: relative;
+            width: 100%;
+            float: left;
+            .gallery-img {
+                float: left;
+                width: 100%;
+                img {
+                    float: left;
+                    width: 100%;
+                }
+
+                &:hover {
+                    .mask {
+                        opacity: 1;
+                        .zoom {
+                            opacity: 1;
+                            @include transform(translate(0,0));
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    @include transition($default-transition);
+    .zoom {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 30px;
+        margin-left: -15px;
+        margin-top: -15px;
+        @include transform(translate(0,50%));
+        display: table;
+        text-align: center;
+        .fa {
+            display: table-cell;
+            vertical-align: middle;
+            color: #fff;
+            font-size: 24px;
+        }
+        &.video-post-trigger,&.video-item-trigger {
+            .fa {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+
+/*  6.9.1. VIDEO GALLERY
+    ------------------------------------------------------------------------- */ 
+.video-item{
+    text-align: center;
+    margin-bottom: 40px;
+    .video-media {
+        position: relative;
+        margin-bottom: 25px;
+        .mask {
+            .zoom {
+                width: 60px;
+                height: 60px;
+                margin-left: -30px;
+                margin-top: -30px;
+            }
+        }
+
+        &:hover {
+            .mask {
+                opacity: 1;
+                .zoom {
+                    opacity: 1;
+                    @include transform(translate(0,0));
+                }
+            }
+
+        }
+    }
+    h2{
+        margin-bottom: 0;
+        a {
+            color: #fff;
+        }   
+    }
+}
+.col-md-6,.col-lg-6, .col-sm-6 {
+    &:nth-last-child(1),
+        &:nth-last-child(2){
+        .video-item{
+            margin-bottom: 0;
+        }
+    }
+}
+.col-md-4,.col-lg-4, .col-sm-4 {
+    &:nth-last-child(1),
+        &:nth-last-child(2),
+        &:nth-last-child(3){
+        .video-item{
+            margin-bottom: 0;
+        }
+    }
+}
+.col-md-3,.col-lg-3, .col-sm-3 {
+    &:nth-last-child(1),
+        &:nth-last-child(2),
+        &:nth-last-child(3),
+        &:nth-last-child(4){
+        .video-item{
+            margin-bottom: 0;
+        }
+    }
+}

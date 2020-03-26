@@ -1,0 +1,79 @@
+/* =============================================================================
+    5. FOOTER
+    ========================================================================= */
+
+#footer-wrapper {
+    padding-top: 0;
+    background-color: #111111;
+    &.static {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    > #footer {
+        padding-top: 90px;
+        > .container > .row {
+            margin-bottom: 0;
+        }
+    }
+
+    a, p, span, li {
+        font-size: 13px;
+        color: $mc-light;
+        font-weight: $font-weight-light;
+    }
+    a {
+        color: #fff;
+    }
+    &.footer-style-01 {
+        > #footer {
+            > .container > .row {
+                margin-bottom: 90px;
+            }
+        }
+        .footer-widget-container{
+            .widget {
+                margin-bottom: 43px;
+                line-height: 15px;
+            } 
+        } 
+    }
+    &.footer-style-02 {
+        .copyright-container {
+            .row {
+                padding: 20px 0;
+            }
+        }
+    }
+    p {
+        padding-bottom: 0;
+    }
+    .btn {
+        span {
+            font-size: 12px;
+            color: #fff;
+            font-weight: $font-weight-semibold;
+        }
+    }
+
+    .copyright-container {
+        text-align: left;
+        width: 100%;
+        background-color: $mc-background-dark;
+        .row {
+            padding: 28px 0;
+            margin-bottom: 0;
+        }
+
+        p {
+            padding-bottom: 0;
+            font-size: 13px;
+            line-height: 20px;
+            margin-top: 8px;
+        }
+    }
+}
+.footer-widget-container {
+    list-style-type: none;
+}

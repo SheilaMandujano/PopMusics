@@ -1,0 +1,299 @@
+/*  
+    6.18. ELEMENTS - MASTER SLIDER
+    ========================================================================= */
+
+#masterslider-artist,
+#masterslider-band,
+#masterslider-blog,
+#masterslider-store{    
+    max-width: 100%;
+    min-height: 650px;
+    margin-bottom: 100px !important;
+
+    &.master-slider-full-screen{
+        min-height: 1000px;        
+    }
+
+    &.mb-0 {
+        margin-bottom: 0 !important;
+    }
+}
+
+.master-slider {
+    margin-bottom: 100px;
+    overflow: hidden !important;
+}
+
+.ms-view {
+    background: $mc-dark;
+}
+
+/* 
+    STYLING NAVIGATION ARROWS    
+*/ 
+
+.ms-skin-default {
+    .ms-nav-next,.ms-nav-prev {
+        right: 0;
+        left: auto;
+    }
+    .ms-nav-next {
+        width: 44px;
+        height: 64px;
+
+        margin-top: 20px;
+
+        background: url("../img/svg/arrow-next.svg");
+        background-size: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        &:hover {
+            background: url("../img/svg/arrow-next-white.svg");
+            background-size: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    .ms-nav-prev {
+        width: 44px;
+        height: 64px;
+
+        margin-top: -40px;
+
+        background: url("../img/svg/arrow-prev.svg");
+        background-size: 10px;
+        background-position: center;
+        background-repeat: no-repeat;
+        &:hover {
+            background: url("../img/svg/arrow-prev-white.svg");
+            background-size: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.slider-border {
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 75px;
+        width: 100%;
+        background-size: cover;
+        bottom: -2px;
+        background-image: url(../img/svg/bkg-bottom-border.svg);
+    }
+}
+
+#masterslider-blog {
+    &.ms-skin-default {
+        .ms-nav-next,.ms-nav-prev {
+            background-size: 15px;
+            right: 45px;
+            width: 139px;
+            height: 139px;
+            margin-top: 0;
+            border-left: 1px solid #212121;
+            background-color: $mc-dark;
+        }
+        .ms-nav-next {
+            border-bottom: 1px solid #212121;
+            margin-top: -140px;
+        }
+        &.with-inner-nav {
+            .ms-nav-next {
+                margin-top: 0;
+            }
+        }
+
+    }
+}
+/*  
+    MASTER SLIDER CAPTIONS, HEADINGS AND LINKS
+*/ 
+
+.pi-caption-small {
+    color: #DDDDDD;
+    font-family: $body-font-family;
+    font-size: 18px;
+    font-weight: $font-weight-light;
+}
+
+.pi-caption {
+    margin-bottom: 0;
+    color: #fff;
+    font-family: $body-font-family;
+    font-weight: $font-weight-light;
+    font-size: 60px;
+    line-height: 72px;
+    text-transform: uppercase;
+
+    @include text-shadow(1px, 1px, 0px, #2f3643);
+}
+
+.pi-caption-02 {
+    margin-bottom: 0;
+
+    color: $mc-dark;
+
+    font-family: $body-font-family;
+    font-weight: $font-weight-semibold;
+    font-size: 36px;
+    line-height: 48px;
+    @include transition(none);
+
+    @include text-shadow(1px, 1px, 0px, #2f3643);
+}
+.pi-caption-03 {
+    margin-bottom: 0;
+    color: #fff;
+    font-family: $body-font-family;
+    font-weight: $font-weight-light;
+    font-size: 60px;
+    line-height: 72px;
+    text-transform: none;
+
+    @include text-shadow(1px, 1px, 0px, #2f3643);
+}
+
+.pi-caption-04 {
+    margin-bottom: 0;
+    color: #fff;
+    font-family: $body-font-family;
+    font-weight: $font-weight-light;
+    font-size: 30px;
+    line-height: 42px;
+    text-transform: none;
+    width:38%;
+
+    @include text-shadow(1px, 1px, 0px, #2f3643);
+}
+
+.music-band {
+    .pi-caption {
+        font-family: $creative-font-family;
+        font-size: 120px;
+        line-height: 130px;
+    }
+    .pi-caption-02 {
+        font-family: $creative-font-family;
+        font-size: 72px;
+        line-height: 80px;
+    }
+    .pi-button-02{
+        font-family: $creative-font-family;
+        font-size: 21px;
+        color: #fff;
+        font-weight: $font-weight-medium;  
+    }
+}
+
+.pi-button{   
+    color: #fff;
+    font-family: $body-font-family;
+    font-weight: $font-weight-medium;    
+    font-size: 12px;
+    border: 1px solid #fff;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    @include transition($default-transition);
+    .fa {
+        margin-right: 10px;
+    }
+}
+.pi-button-02{
+    color: #fff;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;    
+    font-size: 13px;
+    background-color: #fff;
+    color: $mc-dark;
+    @include transition($default-transition);
+    &:hover {
+        color: #fff;
+    }
+}
+
+.pi-link-arrow {
+    width: 44px;
+    height: 44px;
+}
+
+.pi-text {
+    color: $mc-dark;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: $font-weight-light;
+}
+.pi-date {
+    font-size: 30px;
+    line-height: 40px;
+    color: #CCCCCC;
+    text-transform: uppercase;
+    font-weight: $font-weight-medium;
+    padding-left: 85px;
+
+    .pi-date-line {
+        height: 5px;
+        width: 60px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -3px;
+    }
+}
+
+.master-slider-custom-nav {
+    position: absolute;
+    right: 20px;
+    display: block;
+    width: 1000px;
+    text-align: center;
+    padding-left: 0;
+    @include transform(rotate(90deg));
+    transform-origin: top right;
+    
+
+    li {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #fff;
+        font-weight: $font-weight-semibold;
+        cursor: pointer;
+        list-style-type: none;
+        display: inline-block;
+        margin-right: 25px;
+        padding-bottom: 0;
+        @include transition($default-transition);
+
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover, &.active {
+            text-decoration: underline;
+        }
+    }
+}
+
+#masterslider-blog {
+    .pi-text {
+        color: #CCCCCC;
+        width: 40%;
+    }
+}
+.pi-container {
+    background-color:$mc-dark;
+    width: 95%;
+    height:280px; 
+}
+
+.btn-slide-down {
+    padding: 20px;
+    .fa {
+        font-size: 24px;
+        color: #fff;
+    }
+}

@@ -1,0 +1,256 @@
+/*  
+    6.14. ELEMENTS - PORTFOLIO
+    ========================================================================= */
+
+.portfolio-items {
+    padding-left: 0;
+
+    .portfolio-item  {
+        list-style: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    *[class*="col-"]{
+        &.portfolio-item{
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.portfolio-item-container {
+
+    .portfolio-img {
+        width: 100%;
+        margin-bottom: 20px;
+
+        img {
+            width: 100%;
+        }
+        a{
+            display: block;
+            @include transition($default-transition);
+            &:hover { 
+                opacity: 0.8;
+            }
+        }
+    }
+    h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        a {
+            color: #fff;
+            font-weight: $font-weight-normal;
+        }
+    }
+}
+/*  6.14.1. PORTFOLIO GRID
+    ------------------------------------------------------------------------- */ 
+
+.portfolio-grid {
+    .portfolio-item-container {
+        text-align: center;
+    }
+}
+
+.portfolio-items {
+    .portfolio-item {
+
+        .portfolio-item-inner {
+            float: left;
+            margin-right: 30px;
+        }
+        .portfolio-item-details {
+            float: left;
+            h3 {
+                margin-bottom: 30px;
+            }
+            ul {
+                padding-left: 0;
+                li {
+                    list-style-type: none;
+                    padding-bottom: 2px;
+                    color: $mc-dark;
+                }
+            }
+            .portfolio-item-date {
+                font-size: 13px;
+                color: $mc-light;
+                text-transform: uppercase;
+                font-weight: $font-weight-medium;
+                margin-bottom: 5px;
+                display: inline-block;
+            }
+            p {
+                color: $mc-dark;
+            }
+        }
+
+        .portfolio-body {
+            margin-top: 60px;
+            padding-top: 60px;
+            border-top: 1px solid #EDEDED;
+        }
+    }
+}
+
+.portfolio-list {
+    &.portfolio-items {
+        .portfolio-item {
+            margin-bottom: 70px;
+            &:last-child {
+                margin-bottom: 0; 
+            }
+        }
+    }
+}
+.dark-theme {
+    .portfolio-items {
+        .portfolio-item {
+            .portfolio-item-details {
+                ul {
+                    li {
+                        color: $mc-regular-dark-bg;
+                    }
+                }
+                .portfolio-item-date {
+                    color: $mc-light;
+                }
+                p {
+                    color: $mc-regular-dark-bg;
+                }
+            }
+
+            .portfolio-body {
+                border-top: 1px solid #333334;
+            }
+        }
+    }
+}
+
+/*  6.14.2. LATEST PORTFOLIO CAROUSEL
+    ------------------------------------------------------------------------- */ 
+
+.latest-portfolio-carousel {
+    .latest-portfolio-item {
+        width: 100%;
+        text-align: center;
+    }
+}
+.portfolio-meta {
+    padding-left: 0;
+    display: table;
+    margin: 0 auto;
+    list-style: none;
+    li {
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 13px;
+        float: left;
+        padding: 0 10px;
+        color: $mc-light;
+        &:after {
+            content: "|";
+            position: relative;
+
+            left: 10px;
+        }
+        &:last-child {
+            padding-right: 0;
+            &:after {
+                display: none;
+            }
+        }
+        &:first-child {
+            padding-left: 0;
+        }
+
+        a {
+            color: $mc-light;
+        }
+    }
+}
+
+
+/*  6.14.3. PORTFOLIO FILTERS
+    ------------------------------------------------------------------------- */ 
+
+.filters {
+    padding-left: 0;
+    display: inline-block;
+    > li {
+        position: relative;
+        list-style: none;
+        float: left;
+        margin-right: 7px;
+        margin-left: 7px;
+        padding-bottom: 0;
+        text-transform: uppercase;
+        color: $mc-light;
+        font-weight: $font-weight-medium;
+        font-size: 13px;
+        line-height: 20px;
+        cursor: pointer;
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: -6px;
+            background-color: #fff;
+            @include transition($default-transition);
+        }
+
+        a {
+            color: $mc-light; 
+        }
+
+        &.filter-button{
+            &.is-checked::before,
+            &:hover::before{
+                width: 100%;
+            }
+        }
+    }
+    &.filters-style-02 {
+        margin-bottom: 10px;
+        > li {
+            margin-right: 9px;
+            margin-left: 9px;
+
+            &::before {
+                display: none;
+            }
+            &.filter-button{
+                &.is-checked {
+                    a {
+                        color: $mc-dark;
+                    }
+                }
+            }
+        }
+    }
+}
+.dark-theme {
+    .filters {
+        > li {
+            color: #fff;
+        }
+        &.filters-style-02 {
+            > li {
+                &.filter-button{
+                    &.is-checked {
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

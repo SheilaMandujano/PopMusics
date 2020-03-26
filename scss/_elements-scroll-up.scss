@@ -1,0 +1,42 @@
+/*  
+    6.16. ELEMENTS - SCROLL UP
+    ========================================================================= */
+
+.scroll-up {
+    width: 40px;
+    height: 40px;
+
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+
+    background-color: #242424;
+    z-index: 100;
+
+    @include border-radius(50%);
+    @include transition($default-transition);
+    @include transform(translateY(100px));
+
+    i {
+        display: table-cell;
+        color: $mc-light;
+        font-size: 9px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        vertical-align: middle;
+
+        @include transition($default-transition);
+    }
+
+    &:hover i {
+        color: #fff;
+    }
+    
+    &.show-scroll {
+        @include transform(translateY(0));
+    }
+    &.hide-scroll {
+        @include transform(translateY(100px));
+    }
+}

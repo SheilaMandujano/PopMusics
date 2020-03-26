@@ -1,0 +1,87 @@
+/*  
+    6.13. ELEMENTS - OWL CAROUSEL
+    ========================================================================= */
+.owl-nav {
+    > .owl-prev,
+    > .owl-next{
+        position: relative;
+        left: 50%;
+        width: 15px;
+        height: 25px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include transition($default-transition);
+    }
+    > .owl-prev {
+        margin-left: -28px;
+        top: 21px;
+        background-image: url("../img/svg/arrow-prev.svg");
+
+        &:hover {
+            background-image: url("../img/svg/arrow-prev.svg"); 
+            opacity: 0.5;
+        }
+    }
+
+    > .owl-next {
+        margin-left: 14px;
+        top: -4px;
+
+        background-image: url("../img/svg/arrow-next.svg");
+
+        &:hover {
+            background-image: url("../img/svg/arrow-next.svg"); 
+            opacity: 0.5;
+        }
+    }
+}
+.dark-theme {
+    .owl-nav {
+        > .owl-prev {
+            &:hover {
+                background-image: url("../img/svg/arrow-prev-white.svg"); 
+                opacity: 1;
+            }
+        }
+
+        > .owl-next {
+            &:hover {
+                background-image: url("../img/svg/arrow-next-white.svg"); 
+                opacity: 1;
+            }
+        }
+    }
+}
+.owl-dots {
+    text-align: center;
+    margin-top: 80px;
+    .owl-dot {
+        display: inline-block;
+        &.active {
+            span {
+                width: 8px;
+                height: 8px;
+                margin: 4px 3px;
+            }
+        }
+        span {
+            background-color: $mc-regular;
+            width: 6px;
+            height: 6px;
+            margin: 5px 3px;
+            display: block;
+            @include border-radius(50%);
+        }
+    }
+}
+
+.owl-carousel {
+    .owl-item {
+        width: 100%;
+    }
+}
+.owl-stage-outer {
+    width: 100%;
+}
+

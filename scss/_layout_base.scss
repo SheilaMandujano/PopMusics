@@ -1,0 +1,588 @@
+/* =============================================================================
+    3. BASIC LAYOUT STYLES
+    ========================================================================= */
+#loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 10000;
+
+    > #loading-status {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+
+        width: 80px;
+        height: 80px;
+
+        margin-top: -50px;
+        margin-left: -50px;
+
+        border: 3px solid transparent;
+        border-top-color: #e21f2f;
+
+        @include border-radius(50%);
+        @include animation-name(rotate);
+        @include duration(2.5s);
+        @include count(infinite);
+
+        @include keyframes(rotate){
+            0% {
+                @include transform(rotate(0deg));
+            }
+
+            100% {
+                @include transform(rotate(360deg));
+            }
+        };
+
+        &::before,
+        &::after{
+            position: absolute;
+            display: block;
+            content: "";
+            border: 3px solid transparent;
+
+            @include border-radius(50%);
+            @include animation-name(rotate);
+            @include duration(3s);
+            @include count(infinite);
+
+            @include keyframes(rotate){
+                0% {
+                    @include transform(rotate(0deg));
+                }
+
+                100% {
+                    @include transform(rotate(360deg));
+                }
+            };
+        }
+
+        &::before {
+            top: 5px;
+            right: 5px;
+            bottom: 5px;
+            left: 5px;
+            border-bottom-color: #34DDDD;
+        }
+
+        &::after {
+            @include duration(2.5s);
+
+            top: 15px;
+            right: 15px;
+            bottom: 15px;
+            left: 15px;
+            border-top-color: #323232;
+        }
+    }
+}
+.container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/*  
+    3.1. PAGE CONTENT
+    ========================================================================= */ 
+
+.page-content { 
+    position: relative;
+
+    .row {
+        margin-bottom: 115px;
+        &.blog-grid-mb {
+            margin-bottom: 85px;
+        }
+
+        div[class^="col-md-"] .cma-wysiwyg-editor {
+            overflow: hidden;
+        }
+
+        &.row-equal-height {
+            margin-bottom: 0;
+
+            .custom-col-padding {
+                padding-top: 115px;
+                padding-bottom: 115px;
+            }
+        }
+    }
+    &.column-img-bkg {
+        .container-fluid{
+            padding-left: 15px;
+            padding-right: 15px;
+            .row {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.music-blog {
+    .page-content { 
+        .row {
+            margin-bottom: 100px;
+            &.blog-grid-mb {
+                margin-bottom: 75px;
+            }
+        }
+    }
+}
+.music-band {
+    .page-content { 
+        .row {
+            margin-bottom: 130px;
+            &.blog-grid-mb {
+                margin-bottom: 95px;
+            }
+        }
+    }
+}
+
+.page-content {
+    &.custom-background {
+        &.bkg-border {
+            position: relative;
+            &:before, &:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                height: 75px;
+                width: 100%;
+                background-size: cover;
+            }
+            &:before {
+                top: -2px;
+                background-image: url(../img/svg/bkg-top-border.svg);
+                background-repeat: repeat-x;
+            }
+            &:after {
+                bottom: -2px;
+                background-image: url(../img/svg/bkg-bottom-border.svg);
+                background-repeat: repeat-x;
+            }
+        }
+    }
+}
+
+.section-border .row:first-child {
+    border-top: 1px solid #EDEDED;
+}
+.custom-border {
+    border-top: 1px solid #EDEDED;
+}
+.dark-theme {
+    .custom-border {
+        border-top: 1px solid #333;
+    }
+}
+
+/*  3.1.1. PAGE CONTENT BACKGROUNDS
+    ------------------------------------------------------------------------- */
+
+.bkg-dark-grey {
+    background-color: $mc-dark;
+}
+.bkg-light-grey {
+    background-color: #F7F7F7;
+}
+
+[class*="bkg-img"] {
+    @include bkg-img-styles();    
+}
+
+.bkg-img01 {
+    background-image: url("../img/pics/bkg-img-01.jpg");
+}
+
+.bkg-img02 {
+    background-image: url("../img/pics/bkg-img-02.jpg");
+}
+
+.bkg-img03 {
+    background-image: url("../img/pics/bkg-img-03.jpg");
+}
+
+.bkg-img04 {
+    background-image: url("../img/pics/bkg-img-04.jpg");
+}
+
+.bkg-img05 {
+    background-image: url("../img/pics/bkg-img-05.jpg");
+}
+.bkg-img06 {
+    background-image: url("../img/pics/bkg-img-06.jpg");
+}
+
+.bkg-img07 {
+    background-image: url("../img/pics/bkg-img-07.jpg");
+}
+
+.bkg-img08 {
+    background-image: url("../img/pics/bkg-img-08.jpg");
+}
+
+.bkg-img09 {
+    background-image: url("../img/pics/bkg-img-09.jpg");
+}
+
+.bkg-img10 {
+    background-image: url("../img/pics/bkg-img-10.jpg");
+}
+.bkg-img11 {
+    background-image: url("../img/pics/bkg-img-11.jpg");
+}
+
+
+/*  
+    3.2. HELPERS - PADDINGS AND MARGINS, CENTERING TEXT...
+    ========================================================================= */ 
+
+*[class^="row"] *[class^="row"]:last-child {
+    margin-bottom: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+.mb-40 {
+    margin-bottom: 40px !important;
+}
+.mb-60 {
+    margin-bottom: 60px !important;
+}
+.mb-80 {
+    margin-bottom: 80px !important;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
+.mb-130 {
+    margin-bottom: 130px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+.pt-100 {
+    padding-top: 100px;
+}
+.pt-115 {
+    padding-top: 115px;
+}
+.pt-120 {
+    padding-top: 120px;
+}
+.pt-200 {
+    padding-top: 200px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pb-90 {
+    padding-bottom: 90px;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.pb-120 {
+    padding-bottom: 120px;
+}
+.pb-200 {
+    padding-bottom: 200px;
+}
+
+
+.centered {
+    text-align: center;
+}
+
+.custom-col-padding-both {
+    position: relative;
+    padding: 240px 100px;
+}
+.custom-section-padding {
+    padding: 270px 0;
+}
+.music-band {
+    .custom-section-padding {
+        padding: 210px 0; 
+    }
+}
+.padding-0 {
+    padding-left: 0;
+    padding-right: 0;
+
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .col-md-12 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+/*  
+    3.3. PAGE TITLES
+    ========================================================================= */ 
+
+.page-title {
+    position: relative;
+    padding-top: 230px;
+    padding-bottom: 230px;
+    margin-bottom: 100px;
+    text-align: center;
+    @include bkg-img-styles();
+
+    .pt-heading{
+        h1{
+            text-align: center;
+            display: block;
+            width: 100%;
+            color: #fff;
+            font-size: 40px;
+            margin-bottom: 0;
+        }
+    }
+    &.page-title-style-01 {
+        padding-top: 290px;
+        padding-bottom: 250px;
+        .pt-heading{
+            h1 {
+                text-transform: uppercase;
+                font-size: 40px;
+                font-weight: $font-weight-medium;
+            }
+        }
+    }
+
+    &.page-title-style-02 {
+        padding-top: 210px;
+        padding-bottom: 200px;
+        .pt-heading{
+            h1 {
+                position: relative;
+                padding-bottom: 20px;
+                margin-bottom: 25px;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    height: 2px;
+                    width: 30px;
+                    left: 50%;
+                    margin-left: -15px;
+                }
+            }
+            span {
+                text-transform: uppercase;
+                font-size: 21px;
+                font-weight: $font-weight-normal;
+            }
+        }
+    }
+    &.page-title-style-03 {
+        padding-top: 150px;
+        padding-bottom: 110px;
+        background-color:$mc-dark;
+        .pt-heading{
+            h1 {
+                padding-left: 17%;
+                padding-right: 17%;
+                font-size: 30px;
+                line-height: 45px;
+                font-weight: $font-weight-medium;
+            }
+        }
+    }
+    &.page-title-style-04 {
+        padding-top: 250px;
+        padding-bottom: 230px;
+        background-color:$mc-dark;
+        .pt-heading{
+            h1 {
+                font-size: 60px;
+                line-height: 70px;
+                font-weight: $font-weight-normal;
+            }
+        }
+    }
+    &.page-title-style-05 {
+        padding-top: 220px;
+        padding-bottom: 115px;
+
+        .pt-heading {
+            h1 {
+                font-size: 60px;
+                line-height: 70px;
+                font-weight: $font-weight-light;
+            }
+        }
+    }
+
+    &.blog-title {
+        padding-top: 155px;
+        padding-bottom: 145px;
+        background-color:$mc-dark;
+        margin-bottom: 115px;
+
+        h1 {
+            padding-left: 17%;
+            padding-right: 17%;
+            font-size: 30px;
+            line-height: 45px;
+            font-weight: $font-weight-medium;
+            color: #fff;
+            margin-bottom: 20px;
+
+            a {
+                color: #fff;
+            }
+
+            &:only-child {
+                margin-bottom: 0;
+            }
+        }
+        .post-meta {
+            margin: 0 auto;
+            li {
+                color: $mc-regular-dark-bg;
+                font-weight: $font-weight-normal;
+                a {
+                    color: $mc-regular-dark-bg;
+                    font-weight: $font-weight-normal;
+                }
+            }
+
+            .post-category {
+                a {
+                    &:not(only-child) {
+                        margin-right: 7px;
+
+                        &:last-child {
+                            margin-right: 0; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-title-intro {
+    background-image: url("../img/page-titles/intro-page-title.jpg");
+}
+.page-title-01 {
+    background-image: url("../img/page-titles/music-band-page-title-01.jpg");
+}
+.page-title-02 {
+    background-image: url("../img/page-titles/music-band-page-title-02.jpg");
+}
+.page-title-03 {
+    background-image: url("../img/page-titles/music-artist-page-title-01.jpg");
+}
+.page-title-04 {
+    background-image: url("../img/page-titles/music-band-page-title-03.jpg");
+}
+.page-title-05 {
+    background-image: url("../img/page-titles/music-band-page-title-04.jpg");
+}
+.page-title-06 {
+    background-image: url("../img/page-titles/music-band-page-title-05.jpg");
+}
+.page-title-07 {
+    background-image: url("../img/page-titles/music-band-page-title-06.jpg");
+}
+.page-title-08 {
+    background-image: url("../img/page-titles/music-artist-page-title-02.jpg");
+}
+.page-title-09 {
+    background-image: url("../img/page-titles/music-band-page-title-07.jpg");
+}
+.page-title-10 {
+    background-image: url("../img/page-titles/shop-page-title.jpg");
+}
+
+
+.music-band {
+    .page-title {
+        position: relative;
+        margin-bottom: 130px;
+        .pt-heading {
+            h1 {
+                font-size: 72px;
+                line-height: 80px;
+                font-weight: $font-weight-normal;
+            }
+        }
+        &.page-title-style-01{
+            padding-top: 230px;
+            padding-bottom: 230px;
+            &:after{
+                content: "";
+                position: absolute;
+                left: 0;
+                height: 75px;
+                width: 100%;
+                background-size: cover;
+            }
+            &:after {
+                bottom: -2px;
+                background-image: url(../img/svg/bkg-bottom-border.svg);
+            }
+        }
+        &.page-title-style-01 {
+            .pt-heading{
+                h1 {
+                    text-transform: uppercase;
+                    font-size: 72px;
+                    line-height: 80px;
+                }
+            }
+        }
+        &.blog-title {
+            padding-top: 220px;
+            padding-bottom: 210px;
+            h1 {
+                padding-left: 0;
+                padding-right: 0;
+                font-size: 72px;
+                line-height: 80px;
+                font-weight: $font-weight-normal;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                height: 75px;
+                width: 100%;
+                background-size: cover;
+                bottom: -2px;
+                background-image: url(../img/svg/bkg-bottom-border.svg);
+            }
+
+        }
+    }
+}
+
+.music-artist {
+    .page-title {
+        position: relative;
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+}
+
+

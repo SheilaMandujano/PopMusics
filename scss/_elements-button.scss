@@ -1,0 +1,253 @@
+/*  
+    6.3. ELEMENTS - BUTTON
+    ========================================================================= */
+.dark-theme {
+    .btn {
+        span {
+            color: #fff;
+        }
+    }
+}
+.music-band {
+    .btn {
+        span {
+            font-family: $creative-font-family;
+            font-weight: $font-weight-normal;
+            font-size: 21px;
+            line-height: 18px;
+        }
+    }
+    #footer-wrapper {
+        .btn {
+            span {
+                font-size: 21px;
+                line-height: 18px;
+                font-weight: $font-weight-normal;
+            }
+        }
+    }
+}
+.btn {
+    display: inline-block;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    padding: 15px 35px;
+    min-width: 190px;
+    background-color: #212121;
+
+    @include border-radius-none(0);
+
+    span {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase;
+        z-index: 2;  
+        font-weight: $font-weight-semibold;
+
+        @include transition($default-transition);
+    }
+
+    &.icon-animated{ 
+        i {
+            font-size: 13px;
+            margin-right: 10px;
+            z-index: 2;
+
+            @include transition($default-transition);
+            @include transform(translate(0, 0));
+            @include transform(rotate(0));
+        }
+
+        &:hover i{
+            opacity: 1;
+            @include transform(rotate(360deg));
+        }
+
+        &:hover span {
+            @include transform(translate(0, 0));
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 1;
+
+        @include transform-origin(right top);
+        @include transform(scale(0, 1));
+        @include transition(transform 0.4s cubic-bezier(1, 0, 0, 1));
+    }
+
+    &:hover::after {
+        @include transform-origin(left top);
+        @include transform(scale(1,1));  
+    }
+
+    &.btn-center {
+        display: table;
+        margin: 0 auto;
+    }
+
+    &.btn-large {
+        padding: 15px 64px;
+    }
+
+    &.btn-empty {
+        background-color: transparent;
+        border: 1px solid #555555;
+
+        &:hover {
+            border: 1px solid transparent;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.more-btn {
+    display: block;
+    color: $mc-light;
+    @include transition(none);
+    span {
+        text-transform: uppercase;
+        font-weight: $font-weight-medium;
+        font-size: 12px;
+    }
+
+    .fa {
+        position: relative;
+        top: -1px;
+        margin-left: 5px;
+        font-size: 12px;
+        @include transition(transform 0.2s ease-in-out 0s);
+        @include transform(translate(0, 0));
+    }
+    &:hover {
+        .fa {
+            @include transform(translate(7px, 0));
+        }
+    }
+
+    &.btn-animated-hidden{ 
+        position: relative;
+        float: left;
+        @include transition($default-transition);
+
+        span {
+            display: block;
+            position: relative;
+            top: 6px;
+            line-height: 16px;
+            float: left;
+            z-index: 2;
+            opacity: 0;
+            @include transition(opacity 0.1s ease-in-out 0s);
+        }
+        &:hover {
+            left: 0 !important;
+            span{
+                opacity: 1;
+
+            } 
+        }
+    }
+
+    &.more-touch {
+        left: 0 !important;
+        .fa {
+            position: relative;
+            top: -1px;
+            margin-left: 5px;
+            font-size: 12px;
+
+            @include transform(none);
+        }
+        &:hover {
+            .fa {
+                @include transform(none);
+            }
+        }
+        &.btn-animated-hidden{ 
+
+            span {
+                opacity: 1;
+                @include transition(opacity 0.1s ease-in-out 0s);
+            }
+            &:hover {
+                left: 0 !important;
+                span{
+                    opacity: 1;
+
+                } 
+            }
+        }
+    }
+}
+.block-button {
+    text-align: center;
+    display: block;
+
+    img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 30px;
+        margin-bottom: 0;
+        @include transition($default-transition);
+    }
+
+    span {
+        @include transition($default-transition);
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+
+    &.shop-category-link {
+        position: relative;
+        @include flexbox();
+        @include flex-align(center);
+        @include flex-pack(center);
+
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        @include flex-direction(column);
+
+        .btn {
+            padding: 20px;
+            height: 70px;
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            margin-top: -35px;
+            background-color:rgba(0,0,0,0.7);
+            span {
+                font-size: 30px;
+                line-height: 35px;
+            }
+            &:hover {
+                span {
+                    color: #fff;
+                }
+            }
+        }
+        img {
+            margin-bottom: 0;
+        }
+    }
+}

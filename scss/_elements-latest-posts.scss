@@ -1,0 +1,199 @@
+/*  
+    6.11. ELEMENTS - LATEST POSTS
+    ========================================================================= */
+
+/*  6.11.1. LATEST POSTS STYLE 01
+    ------------------------------------------------------------------------- */ 
+.latest-posts-carousel-01 {
+    .latest-post-item {
+        .post-meta {
+            padding-left: 0;
+            list-style-type: none;
+            margin-bottom: 0;
+            li {
+                display: inline-block;
+                padding-bottom: 0;
+            }
+        }
+        float: left;
+        padding-left: 0;
+        .post-title {
+            line-height: 32px;
+            margin-bottom: 25px;
+            font-size: 21px;
+
+            a {
+                color: #281717;
+                font-weight: $font-weight-medium;
+            }
+        }
+        time.post-time {
+            position: relative;
+            font-size: 13px;
+            padding-top: 3px;
+            color: #acb4b5;
+        }
+        .read-more {
+            color: $mc-dark;
+        }
+    }
+}
+.dark-theme {
+    .latest-posts-carousel-01 {
+        .latest-post-item {
+            .post-title {
+                a {
+                    color: $mc-light-bkg-dark;
+                    font-weight: $font-weight-normal;
+                }
+            }
+            p {
+                color: #CCCCCC;
+                .read-more {
+                    color: #CCCCCC;
+                }
+            }
+        }
+    }
+}
+
+/*  6.11.2. LATEST POSTS STYLE 02
+    ------------------------------------------------------------------------- */ 
+.latest-posts-carousel-02 {
+    .latest-post-item {
+        .post-container {
+            .post-body {
+                text-align: center;
+                > .post-meta {
+                    margin-bottom: 5px;
+
+                    margin-left: auto;
+                    margin-right: auto;
+
+                }
+            }
+        }
+    }
+    .owl-dots {
+        .owl-dot {
+            span {
+                background-color: #DDDDDD;
+            }
+        }
+    }
+}
+.dark-theme {
+    .latest-posts-carousel-02 {
+        .latest-post-item {
+            .post-container {
+                .post-body {
+                    text-align: center;
+                    > .post-meta {
+                        margin-bottom: 5px;
+
+                        margin-left: auto;
+                        margin-right: auto;
+                        li {
+                            color: $mc-light;
+                            a {
+                                color: $mc-light;
+                            }
+                        }
+
+                    }
+                    h3 {
+                        a{
+                            color: $mc-light-bkg-dark;  
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  6.11.3. LATEST POSTS STYLE 03
+    ------------------------------------------------------------------------- */ 
+.latest-posts-carousel-03 {
+    .latest-post-item {
+        .post-container {
+            .post-body {
+                text-align: center;
+                > .post-meta {
+                    margin-bottom: 5px;
+
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+.dark-theme {
+    .latest-posts-carousel-03 {
+        .latest-post-item {
+            .post-container {
+                .post-body {
+                   
+                    > .post-meta {
+                        li {
+                            color: $mc-light;
+                            a {
+                                color: $mc-light;
+                            }
+                        }
+
+                    }
+                    h3 {
+                        a{
+                            color: $mc-light-bkg-dark;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  6.11.4. LATEST POSTS BLOG
+    ------------------------------------------------------------------------- */ 
+.blog-single {
+    .latest-posts {
+        margin-bottom: 90px;
+
+        .latest-post-item {
+
+            .post-container {
+                .post-body {
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 0 !important;
+
+                    > .post-meta {
+                        margin-bottom: 5px;
+
+                        margin-left: auto;
+                        margin-right: auto;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.music-band {
+    .blog-single {
+        .latest-post-item {
+            .post-container {
+                .post-body {
+                    h3 {
+                        font-size: 30px;
+                        line-height: 46px;
+                    }
+                }
+            }
+        }
+    }
+}

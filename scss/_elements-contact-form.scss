@@ -1,0 +1,116 @@
+/*  
+    6.5. ELEMENTS - CONTACT FORM
+    ========================================================================= */
+
+.wpcf7-form {
+    .contact-form-input-wrapper{
+        label {
+            width: 100%;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        &.half-field{
+            width: 48%;
+            float: left;
+        }
+        &.field-with-margin {
+            margin-left: 4%;
+        }
+        .wpcf7-form-control-wrap {
+            width: 100%;
+            display: block;
+        }
+        .wpcf7-text,
+        .wpcf7-email,
+        .wpcf7-textarea,
+        .wpcf7-date,
+        .wpcf7-number{
+            padding: 10px 20px;
+            margin-bottom: 35px;
+            background-color: #fff;
+            border: 1px solid #e3e3e3;
+            width: 100%;
+            &:focus {
+                border-color: #d3d3d3;
+            }
+        }
+        .wpcf7-text,
+        .wpcf7-email,
+        .wpcf7-date,
+        .wpcf7-number{
+            height: 60px;
+        }
+
+        p {
+            padding-bottom: 0;
+        }
+
+
+        .wpcf7-textarea {
+            margin-left: 0;
+            width: 100%;
+            resize: none;
+            height: 240px;
+        }
+
+        @include placeholder {
+            color: $mc-light;
+            font-size: 13px;
+        }
+    }
+
+    .wpcf7-submit {
+        float: right;
+        padding: 13px 30px;
+        width: 100%;
+        text-transform: uppercase;
+        font-weight: $font-weight-medium;
+        color: #fff;
+        font-size: 13px;
+        border: none;
+        background-color: #212121;
+
+        @include transition($default-transition);
+
+        &.wpcf7-submit-full {
+            width: 100%;
+        }
+    }
+}
+.g-recaptcha {
+    margin-bottom: 35px;
+}
+
+.dark-theme {
+    .wpcf7-form {
+        .wpcf7-text,
+        .wpcf7-email,
+        .wpcf7-textarea,
+        .wpcf7-date,
+        .wpcf7-number {
+            background-color: transparent;
+            border-color: #333333;
+            color: #fff;
+
+            &:focus {
+                border-color: rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        @include placeholder {
+            color: #555555;
+        }
+    }
+}
+.music-band {
+    .wpcf7-form {
+        label,.wpcf7-submit{
+            font-family: $creative-font-family;
+            font-size: 24px; 
+        } 
+        label {
+
+            margin-bottom: 20px;
+        }
+    }
+}

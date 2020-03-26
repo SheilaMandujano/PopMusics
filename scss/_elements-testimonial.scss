@@ -1,0 +1,57 @@
+/*  
+    6.21. ELEMENTS - TESTIMONIAL
+    ========================================================================= */
+.page-content.dark .testimonial > p{
+    color: #fff;
+}
+
+.testimonial-carousel {
+    position: initial;
+    .testimonial {
+        text-align: center;
+        > p {
+            font-family: $serif-font-family;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+
+
+            &:before,&:after {
+
+                position: absolute;
+                font-size: 46px;
+                line-height: 46px;
+                font-family: $body-font-family;
+                font-weight: $font-weight-light;
+            }
+
+            .fa {
+                position: relative;
+                top: -5px;
+                font-size: 11px;
+            }
+        }
+        span {
+            color: #EEEEEE;
+        }
+    }
+
+   
+    .owl-dots {
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        display: block;
+
+        .owl-dot {
+            display: inline-block;
+            float: none;
+        }
+    }
+
+}
+
+

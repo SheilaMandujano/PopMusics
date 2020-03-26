@@ -1,0 +1,278 @@
+//  ============================================================================
+//      BASE FONT MIXIN
+//  ============================================================================
+@mixin body-font-stack() {
+    font-family: $body-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: $font-weight-light;
+    color: $mc-regular;
+}
+
+//  ============================================================================
+//      PLACEHOLDER
+//  ============================================================================
+@mixin placeholder {
+    ::-webkit-input-placeholder {@content}
+    :-moz-placeholder           {@content}
+    ::-moz-placeholder          {@content}
+    :-ms-input-placeholder      {@content}  
+}
+
+//  ============================================================================
+//      BOX SHADOW
+//  ============================================================================
+@mixin box-shadow($top, $left, $spread, $blur, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow: inset $top $left $spread $blur $inset;
+        -moz-box-shadow:    inset $top $left $spread $blur $inset;
+        box-shadow:         inset $top $left $spread $blur $inset;
+
+    } @else {
+        -webkit-box-shadow: $top $left $spread $blur;
+        -moz-box-shadow:    $top $left $spread $blur;
+        box-shadow:         $top $left $spread $blur;
+    }
+}
+
+@mixin box-shadow-none($box-shadow-none){
+    -webkit-box-shadow: $box-shadow-none;
+    -moz-box-shadow:    $box-shadow-none;
+    box-shadow:         $box-shadow-none;
+}
+
+//  ============================================================================
+//      BOX SIZING
+//  ============================================================================
+@mixin box-sizing($default-box-sizing){
+    box-sizing: $default-box-sizing;
+    -webkit-box-sizing: $default-box-sizing;
+    -moz-box-sizing: $default-box-sizing;
+}
+
+
+//  ============================================================================
+//      BORDER RADIUS
+//  ============================================================================
+@mixin border-radius($border-radius) {
+    -webkit-border-radius: $border-radius;
+    -moz-border-radius:    $border-radius;
+    -ms-border-radius:     $border-radius;
+    border-radius:         $border-radius;
+}
+
+@mixin border-radius-none($border-radius-none){
+    -webkit-border-radius:  $border-radius-none;
+    -moz-border-radius:     $border-radius-none;
+    border-radius:          $border-radius-none;
+}
+
+//  ============================================================================
+//      TRANSITIONS MIXIN
+//  ============================================================================
+@mixin transition($default-transition) {
+    -webkit-transition: $default-transition;
+    -moz-transition:    $default-transition;  
+    -o-transition:      $default-transition;
+    transition:         $default-transition;  
+}
+
+
+//  ============================================================================
+//      ANIMATIONS MIXIN
+//  ============================================================================
+@mixin delay($delay) {
+    -webkit-animation-delay: $delay;
+    -moz-animation-delay:    $delay;
+    -ms-animation-delay:     $delay;
+    -o-animation-delay:      $delay;
+    animation-delay:         $delay;
+}
+
+@mixin direction($direction) {
+    -webkit-animation-duration: $direction;
+    -moz-animation-direction:   $direction;
+    -ms-animation-direction:    $direction;
+    -o-animation-direction:     $direction;
+    animation-direction:        $direction;
+}
+
+@mixin duration($duration) {
+    -webkit-animation-duration: $duration;
+    -moz-animation-duration:    $duration;
+    -ms-animation-duration:     $duration;
+    -o-animation-duration:      $duration;
+    animation-duration:         $duration;
+}
+
+@mixin fill-mode($fill) {
+    -webkit-animation-fill-mode: $fill;
+    -moz-animation-fill-mode:    $fill;
+    -ms-animation-fill-mode:     $fill;
+    -o-animation-fill-mode:      $fill;
+    animation-fill-mode:         $fill;
+}
+
+@mixin function($function) {
+    -webkit-animation-timing-function: $function;
+    -moz-animation-timing-function:    $function;
+    -ms-animation-timing-function:     $function;
+    -o-animation-timing-function:      $function;
+    animation-timing-function:         $function;
+}   
+
+@mixin count($count) {    
+    animation-iteration-count:         $count; 
+    -webkit-animation-iteration-count: $count;  
+    -moz-animation-iteration-count:    $count; 
+    -ms-animation-iteration-count:     $count;
+    -o-animation-iteration-count:      $count;
+}
+
+@mixin animation-name($animation-name) {
+    -webkit-animation-name: $animation-name;
+    -moz-animation-name:    $animation-name;
+    -ms-animation-name:     $animation-name;
+    -o-animation-name:      $animation-name;
+    animation-name:         $animation-name;
+}
+
+@mixin visibility($visibility) {
+    -webkit-backface-visibility: $visibility;
+    -moz-backface-visibility:    $visibility;
+    -ms-backface-visibility:     $visibility;
+    -o-backface-visibility:      $visibility;
+    backface-visibility:         $visibility;
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -moz-transform:    $property;
+    -ms-transform:     $property;
+    -o-transform:      $property;
+    transform:         $property;
+}
+
+@mixin transform-origin($transform-origin) {
+    -webkit-transform-origin: $transform-origin;
+    -moz-transform-origin:    $transform-origin;
+    -ms-transform-origin:     $transform-origin;
+    -o-transform-origin:      $transform-origin;
+    transform-origin:         $transform-origin;
+}
+
+@mixin transform-style($transform-style) {
+    -webkit-transform-style: $transform-style;
+    -moz-transform-style:    $transform-style;
+    -ms-transform-style:     $transform-style;
+    -o-transform-style:      $transform-style;
+    transform-style:         $transform-style;
+}
+
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+
+//  ============================================================================
+//      SMALL ARROW ON LINKS
+//  ============================================================================
+@mixin links-arrow-down() {
+    content: "\f078";
+    font-family: "FontAwesome";
+}
+
+@mixin links-arrow-right() {
+    content: "\f054";
+    font-family: "FontAwesome";
+}
+
+
+//  ============================================================================
+//      VERTICAL CENTERING
+//  ============================================================================
+@mixin center-vertically {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include prefix(transform, translate(-50%, -50%), 'webkit' 'ms');
+}
+
+//  ============================================================================
+//      FLEXBOX MIXIN
+//  ============================================================================
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+//  ============================================================================
+//      FLEXBOX ALIGN
+//  ============================================================================
+@mixin flex-align($position) {
+    -webkit-box-align: $position;
+    -webkit-align-items: $position;
+    -ms-flex-align: $position;
+    align-items: $position;
+}
+
+//  ============================================================================
+//     BOX PACK
+//  ============================================================================
+@mixin flex-pack($position) {
+    -ms-flex-pack: $position;
+    -webkit-box-pack: $position;
+}
+
+//  ============================================================================
+//     FLEXBOX DIRECTION
+//  ============================================================================
+@mixin flex-direction($direction) {
+    -webkit-flex-direction: $direction;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
+//  ============================================================================
+//     APPEARANCE
+//  ============================================================================
+@mixin no-appearance() {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+//  ============================================================================
+//      TEXT SHADOW MIXIN
+//  ============================================================================
+@mixin text-shadow($x, $y, $blur, $color) {
+    -webkit-text-shadow: $x $y $blur $color;
+    -moz-text-shadow:    $x $y $blur $color;
+}
+//  ============================================================================
+//      PAGE CONTENT AND PAGE TITLE IMAGE POSITIONING
+//  ============================================================================
+@mixin bkg-img-styles() {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

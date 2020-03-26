@@ -1,0 +1,80 @@
+/*  
+    6.10. ELEMENTS - INSTAGRAM STREAM
+    ========================================================================= */
+
+.instagram-stream{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    display: table;
+    @include box-sizing(border-box);
+    background-color: $mc-dark;
+    li{
+        list-style: none;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        @include box-sizing(border-box);
+        background-size: cover;
+        padding-bottom: 0;
+
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            &:before{
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 100%;
+                left: 0;
+                background-color: rgba(0,0,0,0.3);
+                z-index: 1;
+                -webkit-transition: all 0.2s ease 0s;
+                -moz-transition: all 0.2s ease 0s;
+                -o-transition: all 0.2s ease 0s;
+                -ms-transition: all 0.2s ease 0s;
+                transition: all 0.2s ease 0s;
+                @include transition($default-transition);
+            }
+            &:hover:before{
+                background-color: rgba(0,0,0,0.0);
+            }
+        }
+    }
+    .is-text {
+        background-color: #171719;
+        text-align: left;
+        padding: 0 30px;
+        @include box-sizing(border-box);
+
+        p{
+            color: #ccd4dc;
+        }
+        h3 {
+            color: #fff;
+            word-break: break-all;
+            margin-bottom: 0;
+        }
+    }
+    .is-text-inner-table {
+        display: table;
+        height: 100%;
+    }
+    .is-text-inner-cell {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+.instagram-list{
+    width: 100%;
+    @include box-sizing(border-box);
+    padding: 0;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 0 !important;
+}

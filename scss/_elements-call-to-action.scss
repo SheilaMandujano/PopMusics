@@ -1,0 +1,68 @@
+/*  
+    6.4. ELEMENTS - CALL TO ACTION
+    ========================================================================= */
+
+.dark-theme{
+    .call-to-action {
+        .newsletter {
+            .email {
+                color: $mc-regular-dark-bg;
+                border: 1px solid #212121;
+                background-color: transparent;
+            }
+            @include placeholder{
+                color: #555555; 
+            }
+            .submit {
+                background-color: #212121;
+                &:hover {
+                    background-color: $hover-dark-dark-bg;
+                }
+            }
+        }
+    }
+}
+.call-to-action {
+    .newsletter {
+        display: table;
+        margin: 0 auto;
+        .email {
+            padding: 14px 20px;
+            background-color: $mc-background;
+            border: 1px solid #DDDDDD;
+            min-width: 555px;
+            height: 50px;
+            float: left;
+            &:focus {    
+                border-width: 1px;
+                border-style: solid;
+            }
+        }
+
+        @include placeholder{
+            color: $mc-light; 
+        }
+
+        .submit {
+            display: inline-block;
+            overflow: hidden;
+            backface-visibility: hidden;
+            position: relative;
+            padding: 12px 64px 12px 64px;
+            background-color: #333333;
+            border:none;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: $font-weight-semibold;
+            margin-left: 7px;
+            float: left;
+
+            @include transition($default-transition);
+
+            &:hover {
+                background-color: $hover-dark-light-bg;
+            }
+        }
+    }
+}

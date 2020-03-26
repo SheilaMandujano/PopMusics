@@ -1,0 +1,59 @@
+/*  
+    6.6. ELEMENTS - COUNTDOWN
+    ========================================================================= */
+.counter {
+    text-align: center;
+    width: auto!important;
+    height: 125px;
+    .county-days-wrapper,  .county-hours-wrapper, .county-minutes-wrapper, .county-seconds-wrapper{
+        background-color: #212121;
+        height: 125px;
+        width: 165px!important;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        margin-right: 30px;
+
+        .county-days, .county-hours, .county-minutes, .county-seconds {
+            color: #fff;
+            width: 100% !important;
+            font-size: 40px;
+            line-height: 95px;
+            display: inline-block !important;
+            left: 0;
+        }
+    }
+    .county-seconds-wrapper {
+        margin-right: 0;
+    }
+    .county-label-days,.county-label-hours,.county-label-minutes,.county-label-seconds {
+        width: 165px !important;
+        display: inline-block;
+        margin-right: 30px;
+        font-size: 15px;
+        background-color: #212121;
+        padding-top: 5px;
+        padding-bottom: 17px;
+        font-weight: $font-weight-medium;
+        text-align: center;
+        position: relative;
+        top: -57px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .county-label-seconds {
+        margin-right: 0;
+    }
+}
+
+.music-band {
+    .counter {
+        .county-days-wrapper,  .county-hours-wrapper, .county-minutes-wrapper, .county-seconds-wrapper{
+            .county-days, .county-hours, .county-minutes, .county-seconds {
+                font-family: $creative-font-family;
+                font-size: 50px;
+            }
+        }
+    }
+}

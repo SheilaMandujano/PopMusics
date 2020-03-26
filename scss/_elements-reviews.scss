@@ -1,0 +1,285 @@
+/*  
+    6.15. ELEMENTS - REVIEWS
+    ========================================================================= */ 
+.post-rating {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    @include border-radius(50%);
+    background-color: #fff;
+    text-align: center;
+    display: table;
+    width: 50px;
+    height: 50px;
+    span {
+        top: 2px;
+        position: relative;
+        color: $mc-dark;
+        font-size: 15px;
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: $font-weight-medium;
+    }
+}
+/*  6.15.1. REVIEWS GRID
+    ------------------------------------------------------------------------- */ 
+.col-md-8, .vc_col-sm-6 {
+    .reviews-grid {
+        .post-container {
+            width: 48%;
+
+            &:nth-child(2n+1) {
+                clear:both;
+            }
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.reviews-grid {
+    padding-left: 0;
+    li {
+        list-style: none;
+        float: left;
+        padding-bottom: 0;
+    }
+    .post-container {
+        margin-bottom: 35px;
+
+        &.col-md-3 {
+            &:nth-child(4n+1) {
+                clear:left;
+            }
+        }
+        &.col-md-4 {
+            &:nth-child(3n+1) {
+                clear:left;
+            }
+        }
+        &.col-md-6 {
+            &:nth-child(2n+1) {
+                clear:left;
+            }
+        }
+
+
+
+        .post-media {
+            position: relative;
+            margin-bottom: 20px;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+
+            &:hover {
+                .post-rating {
+                    @include transition($default-transition);
+                    span {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .post-body {
+            text-align: center;
+
+            .post-category {
+                text-transform: uppercase;
+                font-size: 13px;
+                line-height: 20px;
+                display: inline-block;
+            }
+            > .post-meta {
+                margin-bottom: 5px;
+
+                margin-left: auto;
+                margin-right: auto;
+
+                li {
+                    text-transform: none;
+                    padding-right: 4px;
+                    padding-left: 0;
+                    font-size: 13px;
+                    &:after{
+                        display: none;
+                    }
+
+                    &.post-date {
+                        color: $mc-light;
+                        font-weight: $font-weight-normal;
+                    }
+                }
+            }
+            h3 {
+                width: 100%;
+                float: left;
+                margin-bottom: 20px;
+                line-height: 30px;
+                a {
+                    color: $mc-light;
+                    font-weight: $font-weight-normal;
+                }
+            }
+        }
+    }
+}
+
+.dark-theme {
+    .reviews-grid {
+        .post-container {
+            .post-body {
+                h3 {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*  6.15.2. REVIEW SINGLE
+    ------------------------------------------------------------------------- */ 
+
+.blog-posts{
+    &.blog-single{
+        &.review-single {
+            ul {
+                .post-container {
+                    list-style: none;
+
+                    .comment-form-container {
+                        #comment-reply {
+                            background-color: #FBFBFB;
+                            border: 1px solid #E3E3E3;
+                            color: $mc-dark;
+                            font-weight: $font-weight-semibold;
+
+                            &:hover {
+                                background-color: #f3f3f3;
+                            }
+                        }
+                    }
+                }
+            }
+            .post-info{
+                width: 90%;
+                margin-bottom: 70px;
+                .post-media {
+                    width: 262px;
+                    margin-bottom: 0;
+                    margin-right: 25px;
+                }
+                h2 {
+                    font-size: 24px;
+                    line-height: 30px;
+                    margin-bottom: 25px;
+
+                    a {
+                        font-weight: $font-weight-light; 
+                    }
+                }
+                ul {
+                    li {
+                        font-size: 13px;
+                        color: $mc-light;
+                        font-weight: $font-weight-normal;
+                        padding-bottom: 3px;
+                    }
+                }
+
+                .post-tags {
+                    li {
+                        font-size: 13px;
+                        color: $mc-light;;
+                        font-weight: $font-weight-normal;
+                        padding-bottom: 3px;
+                        margin-right: 0;
+
+                        .tag {
+                            padding: 0;
+                            background-color: transparent;
+                            text-transform: none;
+                            font-size: 13px;
+                            color: $mc-light;;
+                            font-weight: $font-weight-normal;
+                            padding-bottom: 3px;
+                            &:hover {
+                                background-color: transparent;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .post-meta {
+                display: block;
+                float: left;
+                li {
+                    text-transform: none;
+                    font-size: 13px;
+                    padding-right: 0;
+                    padding-left: 0;
+                    display: inline;
+                    float: none;
+
+                    &.post-author,
+                    &.post-date{
+                        font-weight: $font-weight-semibold;
+
+                        a {
+                            font-weight: $font-weight-semibold; 
+                        }
+                    }
+                    &.post-date{
+                        color: $mc-light;
+                        font-weight: $font-weight-light; 
+                    }
+                    &.post-category {
+                        display: inline-block !important;
+                        width: 100%;
+                        a {
+                            text-transform: uppercase;
+                        }
+                    }
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+            .post-rating {
+                top: 0;
+                width:263px;
+                height: 263px;
+                background-color: #F7F7F7;
+                right: -200px;
+                span {
+                    font-size: 60px; 
+                }
+            }
+        }
+    }
+}
+
+.dark-theme {
+    .blog-posts.blog-single.review-single .post-info h2 a{
+        color: #fff;
+    }
+    .blog-posts.blog-single.review-single .post-rating{
+        background-color: #171719;
+
+        span {
+            color: #fff;
+        }
+    }
+    .blog-posts.blog-single.review-single ul .post-container .comment-form-container #comment-reply {
+        background-color:#292929;
+        border: none;
+        color: #fff;
+    }
+}

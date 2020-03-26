@@ -1,0 +1,112 @@
+//  ============================================================================
+//      MAIN COLORS
+//  ============================================================================
+
+//  Main color (mc) regular on dark background
+//  ============================
+//  Used for:
+//      - main text color on dark backgrounds, ...
+//      - less important text on dark backgrounds
+//      - footer text ...
+
+$mc-regular-dark-bg-bkg-dark: #CCCCCC;
+
+//  Main color (mc) extra light on dark background
+//  ============================
+//  Used for:
+//      - header nav, social links, ...
+//      - headings
+
+$mc-light-bkg-dark: #ffffff;
+
+
+//  Main color - dark background
+//  =======================
+//  Used for:
+//      - body dark background
+
+$mc-background-dark: #060606;
+
+//  Main color (mc) light
+//  =====================
+//  Used for:
+//      - less important text on body (
+//        dates on blog posts, filters, etc...)
+
+$mc-light: #AAAAAA;
+
+
+//  Main color (mc) regular on white backgrounds
+//  =======================
+//  Used for:
+//      - regular body text (paragraphs, li, ...)
+
+$mc-regular-dark-bg: #EEEEEE;
+
+$mc-regular: #888888;
+
+
+//  Main color (mc) dark on white backgrounds
+//  ====================
+//  Used for:
+//      - heading color
+//      - important body text (for example bolded text)
+
+$mc-dark: #171719;
+
+
+//  Main color - white background
+//  =======================
+//  Used for:
+//      - body background
+
+$mc-background: #fff;
+
+$hover-dark-light-bg: #444444;
+$hover-dark-dark-bg: #323232;
+
+//  ============================================================================
+//      FONT DECLARATION
+//  ============================================================================
+
+//  Base font families
+//  ==================
+
+$body-font-family: "Poppins", Arial, sans-serif;
+$heading-font-family: "Poppins", Arial, sans-serif;
+$serif-font-family: "Playfair Display", Georgia, Times New Roman, serif;
+$creative-font-family: "TrashHand", Arial ,sans-serif;
+
+
+//  Base font sizes 
+//  ===============
+
+$base-font-size: 15px;
+$base-line-height: 26px;
+
+
+//  Font weights
+//  ============
+
+$font-weight-light: 300;
+$font-weight-normal: normal;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+
+//  ============================================================================
+//      ANIMATIONS
+//  ============================================================================
+
+//  Deafult transition
+//  ==================
+//  Used for:
+//      - hover effect on links, dropdowns, ...
+
+$default-transition: all 0.3s ease-in-out 0s;
+
+
+
+
+
