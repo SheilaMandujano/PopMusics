@@ -141,7 +141,7 @@ body {
   background-color: #fff;
   -webkit-backface-visibility: hidden; }
   body.dark-theme {
-    background-color: #060606; }
+    background-color: #fff; } /*Fondo--------------*/
 
 address {
   margin-bottom: 2em; }
@@ -194,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
 .dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme h6 {
-  color: #ffffff; }
+  color: #17202A ; } /*Color de la letra----------------------*/
 .dark-theme li {
   color: #EEEEEE; }
 
@@ -410,7 +410,7 @@ input, textarea {
   font-weight: normal; }
 
 .dark-theme .post-container .post-body h3 a {
-  color: #fff; }
+  color: #17202A; }
 .dark-theme .post-container .post-body .post-meta li {
   color: #AAAAAA; }
   .dark-theme .post-container .post-body .post-meta li a {
@@ -491,7 +491,7 @@ input, textarea {
   .post-container .post-body h3 a {
     display: block;
     width: 100%;
-    color: #171719; }
+    color: #fff; }
 .post-container .post-body .post-meta {
   margin-bottom: 5px; }
 .post-container .post-body p {
@@ -504,7 +504,7 @@ input, textarea {
   display: table;
   width: 100%;
   margin-bottom: 60px;
-  background-color: #fff;
+  background-color: #fff; 
   padding: 0; }
   .featured-blog-post .post-media {
     margin-right: 30px;
@@ -711,7 +711,7 @@ input, textarea {
   .blog-posts.blog-single li.post-container .pixely_widget_sharrre {
     float: left;
     padding: 35px 0;
-    border-top: 1px solid #ededed;
+    border-top: 1px solid #17202A;
     border-bottom: 1px solid #ededed;
     margin-bottom: 80px; }
   .blog-posts.blog-single li.post-container .post-tags {
@@ -1337,7 +1337,7 @@ input, textarea {
     6.4. ELEMENTS - CALL TO ACTION
     ========================================================================= */
 .dark-theme .call-to-action .newsletter .email {
-  color: #EEEEEE;
+  color: #17202A;
   border: 1px solid #212121;
   background-color: transparent; }
 .dark-theme .call-to-action .newsletter ::-webkit-input-placeholder {
@@ -1401,7 +1401,7 @@ input, textarea {
 .wpcf7-form .contact-form-input-wrapper label {
   width: 100%;
   margin-bottom: 10px;
-  color: #fff; }
+  color: #17202A; } 
 .wpcf7-form .contact-form-input-wrapper.half-field {
   width: 48%;
   float: left; }
@@ -1417,15 +1417,15 @@ input, textarea {
 .wpcf7-form .contact-form-input-wrapper .wpcf7-number {
   padding: 10px 20px;
   margin-bottom: 35px;
-  background-color: #fff;
-  border: 1px solid #e3e3e3;
+  background-color: #17202A;
+  border: 1px solid #17202A;
   width: 100%; }
   .wpcf7-form .contact-form-input-wrapper .wpcf7-text:focus,
   .wpcf7-form .contact-form-input-wrapper .wpcf7-email:focus,
   .wpcf7-form .contact-form-input-wrapper .wpcf7-textarea:focus,
   .wpcf7-form .contact-form-input-wrapper .wpcf7-date:focus,
   .wpcf7-form .contact-form-input-wrapper .wpcf7-number:focus {
-    border-color: #d3d3d3; }
+    border-color: #17202A; }
 .wpcf7-form .contact-form-input-wrapper .wpcf7-text,
 .wpcf7-form .contact-form-input-wrapper .wpcf7-email,
 .wpcf7-form .contact-form-input-wrapper .wpcf7-date,
@@ -1439,13 +1439,13 @@ input, textarea {
   resize: none;
   height: 240px; }
 .wpcf7-form .contact-form-input-wrapper ::-webkit-input-placeholder {
-  color: #AAAAAA;
+  color: #17202A;
   font-size: 13px; }
 .wpcf7-form .contact-form-input-wrapper :-moz-placeholder {
-  color: #AAAAAA;
+  color: #17202A;
   font-size: 13px; }
 .wpcf7-form .contact-form-input-wrapper ::-moz-placeholder {
-  color: #AAAAAA;
+  color: #17202A;
   font-size: 13px; }
 .wpcf7-form .contact-form-input-wrapper :-ms-input-placeholder {
   color: #AAAAAA;
@@ -1477,13 +1477,13 @@ input, textarea {
 .dark-theme .wpcf7-form .wpcf7-number {
   background-color: transparent;
   border-color: #333333;
-  color: #fff; }
+  color: #17202A; } 
   .dark-theme .wpcf7-form .wpcf7-text:focus,
   .dark-theme .wpcf7-form .wpcf7-email:focus,
   .dark-theme .wpcf7-form .wpcf7-textarea:focus,
   .dark-theme .wpcf7-form .wpcf7-date:focus,
   .dark-theme .wpcf7-form .wpcf7-number:focus {
-    border-color: rgba(255, 255, 255, 0.3); }
+    border-color: #bdb6ae; }
 .dark-theme .wpcf7-form ::-webkit-input-placeholder {
   color: #555555; }
 .dark-theme .wpcf7-form :-moz-placeholder {
@@ -1516,7 +1516,7 @@ input, textarea {
     text-align: center;
     margin-right: 30px; }
     .counter .county-days-wrapper .county-days, .counter .county-days-wrapper .county-hours, .counter .county-days-wrapper .county-minutes, .counter .county-days-wrapper .county-seconds, .counter .county-hours-wrapper .county-days, .counter .county-hours-wrapper .county-hours, .counter .county-hours-wrapper .county-minutes, .counter .county-hours-wrapper .county-seconds, .counter .county-minutes-wrapper .county-days, .counter .county-minutes-wrapper .county-hours, .counter .county-minutes-wrapper .county-minutes, .counter .county-minutes-wrapper .county-seconds, .counter .county-seconds-wrapper .county-days, .counter .county-seconds-wrapper .county-hours, .counter .county-seconds-wrapper .county-minutes, .counter .county-seconds-wrapper .county-seconds {
-      color: #fff;
+      color: #17202A;
       width: 100% !important;
       font-size: 40px;
       line-height: 95px;
@@ -1536,7 +1536,7 @@ input, textarea {
     text-align: center;
     position: relative;
     top: -57px;
-    color: #fff;
+    color: #17202A;
     text-transform: uppercase; }
   .counter .county-label-seconds {
     margin-right: 0; }

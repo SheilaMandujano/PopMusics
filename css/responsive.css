@@ -137,7 +137,7 @@
     .header-wrapper.header-transparent {
       padding-top: 0;
       position: static;
-      background-color: #0f0f0f; }
+      background-color: #fff; } /*=================================== modifique el color*/
     .header-wrapper .top-bar-wrapper .top-bar-inner-container {
       margin-right: auto;
       margin-left: auto;

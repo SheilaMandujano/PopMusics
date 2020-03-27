@@ -86,7 +86,7 @@ ul.default-list li a:hover strong,
 .woocommerce nav.woocommerce-pagination .page-numbers li > a:hover,
 .dark-theme.woocommerce nav.woocommerce-pagination .page-numbers li > span.current,
 .woocommerce nav.woocommerce-pagination .page-numbers.current li > span.current{
-    color: #e21f2f;
+    color: #bdb6ae; /* Color de seleccion de las letras*/
 }
 
 #quick-links > li > a::before,
@@ -126,7 +126,7 @@ ul.default-list li a:hover strong,
 .navbar-default .navbar-nav > li > a.btn:hover,
 .woocommerce .product .woocommerce-tabs #review_form_wrapper .form-submit #comment-reply,
 .woocommerce .product button.button.alt{
-    background-color: #e21f2f;
+    background-color: #8e9598;/*Color de los botones de carrito +*/
 }
 
 blockquote,
@@ -136,7 +136,7 @@ input:focus,
 .volcanno-audio-posts-widget .vlc-apw-ul .vlc-audio-post:hover,
 .volcanno-audio-posts-widget .vlc-apw-ul .vlc-audio-post:hover + .vlc-audio-post,
 .volcanno-audio-posts-widget .vlc-apw-ul .vlc-audio-post:last-child:hover{
-    border-color: #e21f2f;
+    border-color: #bdb6ae;
 }
 
 .newsletter-widget .submit:hover,
@@ -147,15 +147,15 @@ input:focus,
 #newsletter-popup .submit:hover,
 .woocommerce .product .woocommerce-tabs #review_form_wrapper .form-submit #comment-reply:hover,
 .woocommerce .product button.button.alt:hover{
-    background-color: #ff4d5c;
+    background-color: #bdb6ae;
 }
 
 ::-moz-selection { /* Code for Firefox */
-    color: #fff;
-    background: #e21f2f;
+    color: #17202A;
+    background: #bdb6ae;
 }
 
 ::selection {
-    color: #fff;
-    background: #e21f2f;
+    color: #17202A;
+    background: #bdb6ae;
 }
