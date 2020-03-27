@@ -1,0 +1,387 @@
+[
+    {
+        "id": "1",
+        "name": "Adele - 25",
+        "descripcion": "25 es el tercer álbum de estudio de la cantante británica, año 2015, 11 Canciones.",
+        "image": "01 - Adele - 25 - 2015",
+        "disponibilidad": 3,
+        "price": "191"
+    },
+    
+    {
+        "id": "2",
+        "name": "Alicia Keys - VH1 Storytellers",
+        "descripcion": "Fue lanzado en junio de 2013 por RCA Records como un concierto completo, 11 Canciones.",
+        "image": "02 - Alicia Keys - VH1 Storytellers - 2013",
+        "disponibilidad": 1,
+        "price": "249"
+    },  
+    
+    {
+        "id": "3",
+        "name": "Ariana Grande - Sweetener",
+        "descripcion": "La discografía de Ariana Grande se compone de cinco álbumes de estudio, 15 Canciones.",
+        "image": "03 - Ariana Grande - Sweetener - 2018",
+        "disponibilidad": 9,
+        "price": "236"
+    },    
+    
+    {
+        "id": "4",
+        "name": "Beyonce - Lemonade",
+        "descripcion": "Beyoncé Giselle Knowles-Carter, conocida simplemente como Beyoncé, es una cantante, compositora, bailarina, actriz, modelo, diseñadora de moda y empresaria estadounidense, 12 Canciones.",
+        "image": "04 - Beyonce - Lemonade -2016",
+        "disponibilidad": 5,
+        "price": "289"
+    },  
+        
+    {
+        "id": "5",
+        "name": "Billie Eilish -  Don't Smile at Me",
+        "descripcion": "Don't Smile at Me, es el primer extended play de la cantante estadounidense Billie Eilish, 9 Canciones.",
+        "image": "05 - Billie Eilish -  Don't Smile at Me - 2017",
+        "disponibilidad": 1,
+        "price": "189"
+    },  
+        
+    {
+        "id": "6",
+        "name": "Britney Spears - Glory",
+        "descripcion": "Glory es el noveno álbum de estudio de la cantante estadounidense Britney Spears. Fue lanzado el 26 de agosto de 2016 por RCA Records, 17 Canciones.",
+        "image": "06 - Britney Spears - Glory - 2016",
+        "disponibilidad": 0,
+        "price": "219"
+    },  
+        
+    {
+        "id": "7",
+        "name": "Christina Aguilera -  Liberation",
+        "descripcion": "Liberation es el octavo álbum de estudio de la cantante estadounidense Christina Aguilera, publicado el 15 de junio de 2018 por RCA Records, 15 Canciones.",
+        "image": "07 - Christina Aguilera -  Liberation - 2018",
+        "disponibilidad": 12,
+        "price": "239"
+    },  
+        
+    {
+        "id": "8",
+        "name": "Daft punk - Random Access Memory",
+        "descripcion": "Random Access Memories es el cuarto álbum de estudio del dúo francés Daft Punk, 13 Canciones.",
+        "image": "08 - Daft punk - Random Access Memory - 2013",
+        "disponibilidad": 2,
+        "price": "199"
+    },  
+        
+    {
+        "id": "9",
+        "name": "Demi Lovato - Tell Me You Love Me",
+        "descripcion": "Tell Me You Love Me es el sexto álbum de estudio de la cantante estadounidense Demi Lovato, lanzado el 29 de septiembre de 2017, 12 Canciones.",
+        "image": "09 - Demi Lovato - Tell Me You Love Me - 2017",
+        "disponibilidad": 16,
+        "price": "199"
+    },  
+        
+    {
+        "id": "10",
+        "name": "Ed Sheeran - No. 6 Collaborations Project",
+        "descripcion": "No.6 Collaborations Project es un álbum colaborativo entre el cantante británico Ed Sheeran, y otros artistas como Justin Bieber, Bruno Mars, Camila Cabello, Cardi B, Travis Scott, Eminem, 50 Cent, Paulo Londra, Skrillex, entre otros, 15 Canciones.",
+        "image": "10 - Ed Sheeran - No. 6 Collaborations Project - 2019",
+        "disponibilidad": 7,
+        "price": "269"
+    },  
+        
+    {
+        "id": "11",
+        "name": "Ellie Goulding -  Delirium",
+        "descripcion": "Delirium es el tercer álbum de estudio de la cantante inglesa Ellie Goulding, 16 Canciones.",
+        "image": "11 - Ellie Goulding -  Delirium - 2015",
+        "disponibilidad": 0,
+        "price": "269"
+    },  
+        
+    {
+        "id": "12",
+        "name": "Halsey -  Manic",
+        "descripcion": "Manic es el tercer álbum de estudio de la cantante estadounidense Halsey, 12 Canciones.",
+        "image": "12 - Halsey -  Manic - 2020",
+        "disponibilidad": 7,
+        "price": "176"
+    },  
+        
+    {
+        "id": "13",
+        "name": "Harry Styles - Fine Line",
+        "descripcion": "Fine Line es el segundo álbum de estudio del cantante y compositor británico Harry Styles, 12 Canciones.",
+        "image": "13 - Harry Styles - Fine Line - 2019",
+        "disponibilidad": 5,
+        "price": "195"
+    },  
+        
+    {
+        "id": "14",
+        "name": "Jonas Brothers - Happiness Begins",
+        "descripcion": "Happiness Begins es el quinto álbum de estudio de Jonas Brothers, que se lanzó el 7 de junio de 2019, 14 Canciones.",
+        "image": "14 - Jonas Brothers - Happiness Begins - 2019",
+        "disponibilidad": 2,
+        "price": "189"
+    },  
+        
+    {
+        "id": "15",
+        "name": "Justin Bieber -  The Best",
+        "descripcion": "The Best es el primer álbum de grandes éxitos del cantante canadiense Justin Bieber, 22 Canciones.",
+        "image": "15 - Justin Bieber -  The Best - 2019",
+        "disponibilidad": 1,
+        "price": "119"
+    },
+        
+    {
+        "id": "16",
+        "name": "Katy Perry -  Witness",
+        "descripcion": "Es el cuarto álbum de estudio de la cantante y compositora estadounidense Katy Perry, publicado bajo su nombre artístico actual, 15 Canciones.",
+        "image": "Katy Perry -  Witness16 - Katy Perry -  Witness - 2017",
+        "disponibilidad": 3,
+        "price": "199"
+    },
+        
+    {
+        "id": "17",
+        "name": "Justin Timberlake - Man of the Woods",
+        "descripcion": "Es el quinto álbum de estudio del músico estadounidense Justin Timberlake, 16 Canciones.",
+        "image": "17 - Justin Timberlake - Man of the Woods - 2018",
+        "disponibilidad": 8,
+        "price": "219"
+    },  
+        
+    {
+        "id": "18",
+        "name": "Lady Gaga -  A Star Is Born",
+        "descripcion": "Jackson, una estrella de la música country con problemas de alcoholismo, descubre el talento de Ally, una joven cantante de la cual se enamora, 34 Canciones.",
+        "image": "18 - Lady Gaga -  A Star Is Born - 2018",
+        "disponibilidad": 15,
+        "price": "186"
+    },
+        
+    {
+        "id": "19",
+        "name": "LP - Heart to Mouth",
+        "descripcion": "Heart to Mouth es el quinto álbum de estudio del cantante y compositor estadounidense LP, lanzado el 7 de diciembre de 2018 a través de BMG, 12 Canciones.",
+        "image": "19 - LP - Heart to Mouth - 2018",
+        "disponibilidad": 2,
+        "price": "249"
+    },
+        
+    {
+        "id": "20",
+        "name": "Madonna - Madame X",
+        "descripcion": "Madame X es el decimocuarto álbum de estudio de la cantante estadounidense Madonna, publicado el 14 de junio de 2019 por la compañía Interscope Records, 14 Canciones.",
+        "image": "20 - Madonna - Madame X - 2019",
+        "disponibilidad": 4,
+        "price": "179"
+    },  
+        
+    {
+        "id": "21",
+        "name": "Mariah Carey -  Caution",
+        "descripcion": " Caution es el decimoquinto álbum de estudio de la cantante estadounidense Mariah Carey, lanzado el 16 de noviembre de 2018 en Estados Unidos por la compañía discográfica Epic Records, 10 Canciones.",
+        "image": "21 - Mariah Carey -  Caution - 2018",
+        "disponibilidad": 0,
+        "price": "305"
+    },
+    
+    {
+        "id": "22",
+        "name": "Miley Cyrus -  She Is Coming",
+        "descripcion": " She Is Coming es el segundo EP de la cantautora estadounidense Miley Cyrus, fue lanzado el 31 de mayo de 2019 a través de RCA Records, 6 Canciones.",
+        "image": "22 - Miley Cyrus -  She Is Coming - 2019",
+        "disponibilidad": 4,
+        "price": "199"
+    },
+    
+    {
+        "id": "23",
+        "name": "Maroon 5 -  Red Pill Blues",
+        "descripcion": "Red Pill Blues​ es el sexto álbum de estudio de la banda estadounidense de pop rock Maroon 5., 10 Canciones.",
+        "image": "23 - Maroon 5 -  Red Pill Blues - 2017",
+        "disponibilidad": 11,
+        "price": "369"
+    },
+    
+    {
+        "id": "24",
+        "name": "Pink - Hurts 2B Human",
+        "descripcion": " Es el octavo álbum de estudio de la cantante estadounidense Pink.​ Lanzado a la venta el 26 de abril de 2019 por RCA Records, 13 Canciones.",
+        "image": "24 - Pink - Hurts 2B Human - 2019",
+        "disponibilidad": 14,
+        "price": "219"
+    },
+    
+    {
+        "id": "25",
+        "name": "Rihanna - Anti",
+        "descripcion": "Anti es el octavo álbum de estudio de la cantante barbadense Rihanna, lanzado el 28 de enero de 2016 a través de las discográficas Westbury Road y Roc Nation, 13 Canciones.",
+        "image": "25 - Rihanna - Anti - 2016",
+        "disponibilidad": 8,
+        "price": "190"
+    },  
+    
+        {
+        "id": "26",
+        "name": "Rita Ora - Phoenix",
+        "descripcion": "Es el segundo álbum de estudio de la cantante británica Rita Ora, lanzado el 23 de noviembre de 2018 a través de Atlantic Records, 12 Canciones.",
+        "image": "26 - Rita Ora - Phoenix - 2018",
+        "disponibilidad": 9,
+        "price": "289"
+    },  
+    
+    {
+        "id": "27",
+        "name": "Sam Smith - The Thrill of It Al",
+        "descripcion": "The Thrill Of It All es el segundo álbum de estudio cantautor británico Sam Smith, 14 Canciones.",
+        "image": "27 - Sam Smith - The Thrill of It All - 2017",
+        "disponibilidad": 1,
+        "price": "219"
+    },  
+    
+    {
+        "id": "28",
+        "name": "Selena Gómez - Rare",
+        "descripcion": "Rare es el tercer álbum de estudio de la cantante estadounidense Selena Gomez, 13 Canciones.",
+        "image": "28 - Selena Gómez - Rare - 2020",
+        "disponibilidad": 8,
+        "price": "157"
+    },  
+    
+    {
+        "id": "29",
+        "name": "Shakira - El Dorado",
+        "descripcion": "Es el quinto álbum en vivo de la cantautora colombiana Shakira, que salió a la venta el 13 de noviembre de 2019 en formato de audio digital, 20 Canciones.",
+        "image": "29 - Shakira - El Dorado - 2019",
+        "disponibilidad": 12,
+        "price": "229"
+    },  
+        
+    {
+        "id": "30",
+        "name": "LSD - LSD",
+        "descripcion": "También conocido simplemente como LSD, es el primer álbum de estudio del grupo musical LSD. Originalmente programado para ser lanzado por Columbia Records el 2 de noviembre de 2018, se retrasó hasta el 12 de abril de 2019, 10 Canciones.",
+        "image": "30 - LSD - LSD - 2019",
+        "disponibilidad": 0,
+        "price": "390"
+    },  
+    
+    {
+        "id": "31",
+        "name": "Taylor Swift - Lover",
+        "descripcion": "Lover es el séptimo álbum de estudio de la cantante y compositora estadounidense Taylor Swift. Fue lanzado el 23 de agosto de 2019 por Republic Records, 18 Canciones.",
+        "image": "31 - Taylor Swift - Lover - 2019",
+        "disponibilidad": 7,
+        "price": "179"
+    },   
+    
+    {
+        "id": "32",
+        "name": "The Weeknd - My Dear Melancholy",
+        "descripcion": "My Dear Melancholy, es el primer extended play del cantante canadiense The Weeknd, 6 Canciones.",
+        "image": "32 - The Weeknd - My Dear Melancholy - 2018",
+        "disponibilidad": 0,
+        "price": "289"
+    },   
+    
+    {
+        "id": "33",
+        "name": "Whitney Houston I Wish You Love: More from The Bodyguard",
+        "descripcion": "I Wish You Love: Más de The Bodyguard es la reedición del 25 aniversario de la banda sonora de Whitney Houston, The Bodyguard, 14 Canciones.",
+        "image": "33 - Whitney Houston - I Wish You Love More from The Bodyguard - 2017",
+        "disponibilidad": 1,
+        "price": "279"
+    },   
+    
+    {
+        "id": "34",
+        "name": "Kesha - High Road",
+        "descripcion": "High Road es el cuarto álbum de estudio de la cantante estadounidense Kesha, programado para ser lanzado a través Kemosabe Records y RCA Records el 31 de enero de 2020, 15 Canciones.",
+        "image": "34 - Kesha - High Road - 2020",
+        "disponibilidad": 18,
+        "price": "369"
+    },   
+    
+    {
+        "id": "35",
+        "name": "Iggy Azalea - Wicked Lips",
+        "descripcion": "Wicked Lips es el quinto extended play de la rapera australiana Iggy Azalea. Fue lanzado por Bad Dream Records y Empire Distribution el 2 de diciembre de 2019, 4 Canciones.",
+        "image": "35 - Iggy Azalea - Wicked Lips - 2019",
+        "disponibilidad": 2,
+        "price": "249"
+    },   
+    
+    {
+        "id": "36",
+        "name": "Meghan Trainor - Treat Myself",
+        "descripcion": "Treat Myself es el tercer álbum de estudio de la cantante y compositora estadounidense Meghan Trainor. 8 Canciones.",
+        "image": "36 - Meghan Trainor - Treat Myself - 2020",
+        "disponibilidad": 5,
+        "price": "179"
+    },   
+    
+    {
+        "id": "37",
+        "name": "Carly Rae Jepsen - Dedicated",
+        "descripcion": "Dedicated es el cuarto álbum de estudio de la cantante canadiense Carly Rae Jepsen, 15 Canciones.",
+        "image": "37 -  Carly Rae Jepsen - Dedicated - 2019",
+        "disponibilidad": 1,
+        "price": "200"
+    },   
+    
+    {
+        "id": "38",
+        "name": "Mac Miller - Circles",
+        "descripcion": "Circles es el sexto álbum de estudio del rapero estadounidense Mac Miller, 12 Canciones.",
+        "image": "38 - Mac Miller - Circles - 2020",
+        "disponibilidad": 6,
+        "price": "229"
+    },   
+    
+    {
+        "id": "39",
+        "name": "Tame Impala - The Slow Rush",
+        "descripcion": "The Slow Rush es el cuarto álbum de estudio del proyecto musical australiano Tame Impala, el cual fue lanzado el 14 de febrero de 2020, 12 Canciones.",
+        "image": "39 - Tame Impala - The Slow Rush - 2020",
+        "disponibilidad": 7,
+        "price": "329"
+    },   
+    
+    {
+        "id": "40",
+        "name": "Dan Snaith - Suddenly",
+        "descripcion": "De repente es el décimo álbum de estudio del músico canadiense Dan Snaith, lanzado bajo el apodo Caribou por City Slang el 28 de febrero de 2020, 12 Canciones.",
+        "image": "40 - Dan Snaith - Suddenly - 2020",
+        "disponibilidad": 13,
+        "price": "199"
+    },   
+    
+    {
+        "id": "41",
+        "name": "Dua Lipa - Future Nostalgia",
+        "descripcion": "Future Nostalgia es el segundo álbum de estudio de la cantante británica Dua Lipa, 11 Canciones.",
+        "image": "41 - Dua Lipa - Future Nostalgia - 2020",
+        "disponibilidad": 6,
+        "price": "299"
+    },   
+    
+    {
+        "id": "42",
+        "name": "Baxter Dury - The Night Chancers",
+        "descripcion": "10 Canciones.",
+        "image": "42 - Baxter Dury - The Night Chancers - 2020",
+        "disponibilidad": 16,
+        "price": "156"
+    },   
+    
+    {
+        "id": "43",
+        "name": "Niall Horan - Heartbreak Weather",
+        "descripcion": "Heartbreak Weather es el segundo álbum de estudio del cantante y compositor irlandés Niall Horan, 14 Canciones.",
+        "image": "43 - Niall Horan - Heartbreak Weather - 2020",
+        "disponibilidad": 0,
+        "price": "189"
+    },  
